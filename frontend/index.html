@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель управления студентами</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Панель управления студентами</h1>
+        <form id="add-form" action="#" class="add-form">
+            <div class="mb-3">
+                <label for="surname" class="form-label"></label>
+            <input id="surname" type="text" name="surname" placeholder="Фамилия" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="name" class="form-label"></label>
+            <input id="name" type="text" name="name" placeholder="Имя" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="lastname" class="form-label"></label>
+            <input id="lastname" type="text" name="lastname" placeholder="Отчество" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="faculty" class="form-label"></label>
+            <input id="faculty" type="text" name="faculty" placeholder="Факультет" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="birth" class="form-label"></label>
+            <input id="birth" type="date" name="birth" placeholder="Дата рождения" class="form-control">
+            </div>
+            <div class="mb-3 last-form-input">
+                <label for="studyStart" class="form-label"></label>
+            <input id="studyStart" type="number" name="studyStart" placeholder="Год поступления" class="form-control">
+            </div>
+            <div class="form-btn">
+                <span id="form-valid" class="form-valid"></span>
+                <button id="formBtn" type="submit" class="btn btn-primary">Добавить студента</button>
+            </div>
+
+        </form>
+
+        <form action="#" id="filter-form" class="mb-3">
+            <h2>Фильтрация</h2>
+            <input id="filter-form__fullName-inp" class="form-control mb-3" type="text" placeholder="Ф.И.О. студента">
+            <input id="filter-form__faculty-inp" class="form-control mb-3" type="text" placeholder="Факультет">
+            <input id="filter-form__adm-inp" class="form-control mb-3" type="text" placeholder="Год начала обучения">
+            <input id="filter-form__grad-inp" class="form-control mb-3" type="text" placeholder="Год окончания обучения">
+        </form>
+
+        <div class="mb-3">
+            <button id="sort__fullName" class="btn btn-primary sort-btn">Сортировка по ФИО</button>
+            <button id="sort__faculty" class="btn btn-primary sort-btn">Сортировка по факультету</button>
+            <button id="sort__DbAge" class="btn btn-primary sort-btn">Сортировка по возрасту</button>
+            <button id="sort__yearsAndCurse" class="btn btn-primary sort-btn">Сортировка по году обучения</button>
+        </div>
+
+        <div id="app">
+
+        </div>
+    </div>
+    <script defer src="JS/script.js"></script>
+</body>
+
+</html>
